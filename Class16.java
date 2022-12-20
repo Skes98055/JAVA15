@@ -1,6 +1,5 @@
 import java.util.ArrayList;
-
-class CTest
+class CTest extends Thread
 {
     private int id;
     private int id2;
@@ -33,9 +32,20 @@ public class Class16
 {
     public static void main(String args[])
     {
+
+
         CTest fir=new CTest(2,100000);
         CTest sec=new CTest(100000,200000);
+        long time1,time2,time3;
+        time1 = System.currentTimeMillis();
         fir.run();
+        time2 = System.currentTimeMillis();
         sec.run();
+        time3 = System.currentTimeMillis();
+        double ans1=(time2-time1)/1000;
+        double ans2=(time3-time2)/1000;
+        System.out.println("第一個程式花費:"+ans1+"秒");
+        System.out.println("第二個程式花費:"+ans2+"秒");
+
     }
 }
