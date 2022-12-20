@@ -1,5 +1,5 @@
 
-class CTest
+class CTest extends Thread
 {
     private String id;
     public CTest(String str)
