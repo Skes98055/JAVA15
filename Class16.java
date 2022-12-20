@@ -42,10 +42,12 @@ public class Class16
         time2 = System.currentTimeMillis();
         sec.run();
         time3 = System.currentTimeMillis();
-        double ans1=(time2-time1)/1000;
-        double ans2=(time3-time2)/1000;
-        System.out.println("第一個程式花費:"+ans1+"秒");
-        System.out.println("第二個程式花費:"+ans2+"秒");
+        double ans1=(time2-time1);
+        double ans2=(time3-time2);
+        double aa1= ans1/1000;
+        double aa2= ans2/1000;
+        System.out.printf("第一個程式花費:%.2f秒\n",aa1);
+        System.out.printf("第一個程式花費:%.2f秒\n",aa2);
 
     }
 }
